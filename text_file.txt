@@ -1,0 +1,14 @@
+What do we need to do?
+
+for any polygon with the number of sides > or = 3, there is a formula to determine the angle
+
+[(input_number - 2) * 180] / input_number = oblique_angle
+
+need to subtract oblique angle from 180 to determine the angle
+
+Turtle = the object
+
+####
+Ask the user to insert a number that is greater than 2 and less than 25
+(running python 2, so the input statement will be different)
+... like this > 

@@ -49,11 +49,23 @@ function runit() {
 <textarea id="yourcode" cols="40" rows="10">
 import turtle
 t = turtle.Turtle()
+input_number = int(input("Please insert a number that is greater than 2 and less than 25: "))
+lower_bound = 3
+upper_bound = 24
+while input_number < lower_bound or input_number > upper_bound:
+    print("The number you inserted is out of range.")
+    input_number = int(input("Please insert a number that is greater than 2 and less than 25: "))
 
-for c in ["red","green","blue","yellow","orange"]:
-    t.color(c)
-    t.forward(100)
-    t.left(144)
+number_subtracted = 2
+multiplier = 180
+subtracting_number = 180
+oblique_angle = ((input_number - number_subtracted) * multiplier) / input_number
+final_angle = subtracting_number - oblique_angle
+        
+for c in range(input_number):
+    t.forward(25)
+    t.left(final_angle)
+    
 
 </textarea><br /> 
 <button type="button" onclick="runit()">Run</button> 
